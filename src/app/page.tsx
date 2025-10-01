@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HomePage = () => {
   return (
-    <div className="relative w-full min-h-screen  flex flex-col space-y-8 ">
+    <div className="relative w-full min-h-screen  flex flex-col space-y-8  pb-20 sm:pb-0">
       {/* Background */}
       {/* <Image 
         src="/bg.png" 
@@ -21,12 +21,18 @@ const HomePage = () => {
           priority
         />
       </div>
-      <div className="w-full bg-yellow-500 items-center  text-center py-8">
-        <h1 className="text-7xl font-light text-black">Our Menu</h1>
+      <div className="w-full bg-yellow-500 text-center py-12">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-wide text-black ">
+          Our Menu
+        </h1>
       </div>
-      <div className="text-center">
-        <h1 className="text-3xl font-bold">Welcome to Boma Flame</h1>
+
+      <div className="text-center mt-6">
+        <h2 className="text-2xl md:text-3xl font-semibold text-white-800">
+          Welcome to <span className="text-red-600">Boma Flame</span>
+        </h2>
       </div>
+
       <div className="relative aspect-[4/4]">
         <Image src="/1.png" alt="1" fill />
       </div>
@@ -59,13 +65,39 @@ const HomePage = () => {
         <h1 className="text-6xl font-bold text-red-500">0712591122</h1>
         <p>OR</p>
         <p>ORDER VIA</p>
-        <div className="flex flex-col lg:flex-row items-center justify-between px-8">
-          <Image src="/ubers.png" alt="uber" width={200} height={200}/>
-          <Image src="/glovo.png" alt="uber" width={200} height={200}/>
-          <Image src="/bolt food.png" alt="uber" width={200} height={200}/>
+
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 px-8">
+          <div className="w-40 h-40 flex items-center justify-center rounded-2xl bg-white shadow-md p-4 hover:scale-105 transition-transform">
+            <Image
+              src="/uber.png"
+              alt="Uber Eats"
+              width={160}
+              height={160}
+              className="object-contain"
+            />
+          </div>
+          <div className="w-40 h-40 flex items-center justify-center rounded-2xl bg-white shadow-md p-4 hover:scale-105 transition-transform">
+            <Image
+              src="/glovo.png"
+              alt="Glovo"
+              width={160}
+              height={160}
+              className="object-contain"
+            />
+          </div>
+          <div className="w-40 h-40 flex items-center justify-center rounded-2xl bg-white shadow-md p-4 hover:scale-105 transition-transform">
+            <Image
+              src="/bolt food.png"
+              alt="Bolt Food"
+              width={160}
+              height={160}
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 };
