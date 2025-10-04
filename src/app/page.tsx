@@ -33,7 +33,7 @@ const HomePage = () => {
           <span className="font-semibold">Kiambu Town</span>
         </h1>
 
-        <h2 className="text-5xl font-extrabold text-red-600 tracking-wide">
+        <h2 className="text-3xl font-extrabold text-red-600 tracking-wide">
           0712 591 122
         </h2>
 
