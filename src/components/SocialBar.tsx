@@ -6,11 +6,9 @@ import Link from "next/link";
 
 export default function SocialBar() {
   const links = [
-    { href: "https://twitter.com", icon: <FaWhatsappSquare />, color: "bg-green-500" },
-    { href: "https://twitter.com", icon: <FaSquareXTwitter />, color: "bg-blue-500" },
+    // { href: "https://twitter.com", icon: <FaWhatsappSquare />, color: "bg-green-500" },
     { href: "https://www.instagram.com/boma_flame/", icon: <FaInstagram />, color: "bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600" },
-    { href: "https://tiktok.com", icon: <FaTiktok />, color: "bg-black" },
-    { href: "https://web.facebook.com/profile.php?id=61581603416358", icon: <FaFacebookF />, color: "bg-blue-700" },
+    { href: "https://www.tiktok.com/@boma_flame", icon: <FaTiktok />, color: "bg-black" },
     { href: "https://www.google.com/maps/place/Kiambu+Mall", icon: <SiGooglemaps />, color: "bg-green-600" },
   ];
 

@@ -1,17 +1,10 @@
 import Footer from "@/components/Footer";
+import MenuGallery from "@/components/MenuGallery";
 import Image from "next/image";
 
 const HomePage = () => {
   return (
     <div className="relative w-full min-h-screen  flex flex-col space-y-8  pb-20 sm:pb-0">
-      {/* Background */}
-      {/* <Image 
-        src="/bg.png" 
-        alt="background" 
-        fill 
-        className="object-cover -z-10" 
-        priority
-      /> */}
       <div className="relative w-full aspect-[16/9] ">
         <Image
           src="/logo.png"
@@ -32,8 +25,46 @@ const HomePage = () => {
           Welcome to <span className="text-red-600">Boma Flame</span>
         </h2>
       </div>
+      <MenuGallery />
 
-      <div className="relative aspect-[4/4]">
+      <div className="flex flex-col items-center space-y-6 p-6 bg-white rounded-2xl shadow-lg text-center max-w-md mx-auto">
+        <h1 className="text-3xl font-light text-gray-700">
+          Free Delivery Within{" "}
+          <span className="font-semibold">Kiambu Town</span>
+        </h1>
+
+        <h2 className="text-5xl font-extrabold text-red-600 tracking-wide">
+          0712 591 122
+        </h2>
+
+        <div className="w-full border-t border-gray-200 pt-4 space-y-2">
+          <p className="text-lg font-medium text-gray-800">Delivery Fee</p>
+          <ul className="space-y-1 text-gray-600">
+            <li>
+              <span className="font-semibold">Kirigiti</span> – 50 KSH
+            </li>
+            <li>
+              <span className="font-semibold">Roe</span> – 50 KSH
+            </li>
+            <li>
+              <span className="font-semibold">Thindigua</span> – 120 KSH
+            </li>
+            <li>
+              <span className="font-semibold">Ndumberi</span> – 100 KSH
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default HomePage;
+
+{
+  /* <div className="relative aspect-[4/4]">
         <Image src="/1.png" alt="1" fill />
       </div>
       <div className="relative aspect-[4/4]">
@@ -59,14 +90,11 @@ const HomePage = () => {
       </div>
       <div className="relative aspect-[4/4]">
         <Image src="/10.png" alt="10" fill />
-      </div>
-      <div className="flex flex-col space-y-4 text-center">
-        <h1 className="text-4xl font-light">Free Delivery Within CBD</h1>
-        <h1 className="text-6xl font-bold text-red-500">0712591122</h1>
-        <p>OR</p>
-        <p>ORDER VIA</p>
+      </div> */
+}
 
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 px-8">
+{
+  /* <div className="flex flex-col lg:flex-row items-center justify-center gap-8 px-8">
           <div className="w-40 h-40 flex items-center justify-center rounded-2xl bg-white shadow-md p-4 hover:scale-105 transition-transform">
             <Image
               src="/uber.png"
@@ -94,12 +122,5 @@ const HomePage = () => {
               className="object-contain"
             />
           </div>
-        </div>
-      </div>
-
-      <Footer />
-    </div>
-  );
-};
-
-export default HomePage;
+        </div> */
+}
