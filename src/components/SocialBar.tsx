@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function SocialBar() {
   const links = [
-    // { href: "https://twitter.com", icon: <FaWhatsappSquare />, color: "bg-green-500" },
+    { href: "https://wa.me/message/FLU6NGX6DZ2YP1", icon: <FaWhatsappSquare />, color: "bg-green-500" },
     { href: "https://www.instagram.com/boma_flame/", icon: <FaInstagram />, color: "bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600" },
     { href: "https://www.tiktok.com/@boma_flame", icon: <FaTiktok />, color: "bg-black" },
     { href: "https://www.google.com/maps/place/Kiambu+Mall", icon: <SiGooglemaps />, color: "bg-green-600" },
