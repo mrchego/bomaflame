@@ -13,15 +13,27 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const images = [
-  "/1.png",
-  "/2.png",
-  "/3.png",
-  "/4.png",
-  "/5.png",
-  "/7.png",
-  "/8.png",
-  "/9.png",
-  "/10.png",
+  "/porkchoma.png",
+  "/fried-pork.png",
+  "/honey-glazed-pork.png",
+  "/sweat-and-sour-pork.png",
+  "/mixed-pork-gril.png",
+  "/fish.png",
+  "/mbuzi-choma.png",
+  "/fried-mbuzi.png",
+  "/grilled-chicken.png",
+  "/fried-chicken-kienyeji.png",
+  "/fried-chicken-capon.png",
+  "/sticky-wings.png",
+  "/fried-beef.png",
+  "/fried-liver.png",
+  "/mbuzi-tumbukiza.png",
+  "/beef-tumbukiza.png",
+  "/chicken-tumbukiza.png",
+    "/kids-menu.png",
+  "/breakfast-menu.png",
+  "/accompiments.png",
+  "/platter.png",
 ];
 
 export default function MenuImages() {
