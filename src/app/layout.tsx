@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SocialBar from "@/components/SocialBar";
-import Image from "next/image";
+import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +45,7 @@ export default function RootLayout({
           <div className="relative mx-auto p-4 sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
             <SocialBar />
             {children}
+            <Analytics />
           </div>
         </div>
       </body>
